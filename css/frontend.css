@@ -1,0 +1,99 @@
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+}
+
+.logo {
+    margin: 2px;
+}
+
+
+.languages {
+    float: right;
+}
+ 
+.active {
+    background: darkgrey;
+    /* Vaihda alaviivaan?*/ 
+}
+
+span {
+    color: red;
+}
+
+.illustrative-img {
+    float: left;
+}
+
+.background{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    /*Questo é troppo piccolo. Cambiare questa imagine. */
+    background-image: url(../img/background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: bottom center;
+	background-attachment: fixed ;
+    /*background-image: linear-gradient(to bottom right, rgb(187, 247, 227), rgb(20, 111, 136));*/
+}
+
+.slogan{
+    text-align: center;
+    padding: 50px 50px;
+    padding-top: 97px;
+}
+
+.illustrative-img {
+    display: block;
+    border-radius: 25px;
+    border: 2px;
+}
+
+p {
+    display: block;
+    padding: 6px;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
+
+
+html,body{overflow-y: scroll; }
