@@ -95,5 +95,20 @@ body {
     bottom: 0;
 }
 
+.copyright {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+}
 
-html,body{overflow-y: scroll; }
+.contacts {
+    color: darkblue;
+}
+
+html,body{
+    overflow-y: scroll;
+    font-family: Verdana, Tahoma, sans-serif;
+ }
