@@ -43,7 +43,7 @@ nav {
 }
 
 span {
-    color: red;
+    color: darkblue;
 }
 
 .illustrative-img {
@@ -95,5 +95,11 @@ body {
     bottom: 0;
 }
 
+.contacts {
+    color: darkblue;
+}
 
-html,body{overflow-y: scroll; }
+html,body{
+    overflow-y: scroll;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
