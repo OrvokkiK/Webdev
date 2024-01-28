@@ -28,6 +28,7 @@ nav {
     top: 0;
     width: 100%;
     display: block;
+    z-index: 3;
 }
 
 .logo {
@@ -99,6 +100,14 @@ body {
 
 .contacts {
     color: darkblue;
+}
+
+#positioned-img {
+    position: absolute;
+    display: block;
+    top: 200px;
+    right: 20px;
+    z-index: 1;
 }
 
 html,body{
