@@ -110,6 +110,20 @@ body {
     z-index: 1;
 }
 
+.userDetails {
+    display: block;
+    background-color: rgb(98, 168, 98);
+    width: 400px;
+    height: auto;
+    font-size: smaller;
+    position: center; 
+    margin: auto;
+}
+
+section > h3 {
+    text-align: center;
+}
+
 html,body{
     overflow-y: scroll;
     font-family: Verdana, Tahoma, sans-serif;
