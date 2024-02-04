@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/frontend.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/frontend.css" rel="stylesheet" />
     <title>Viiko 2</title>
-</head>
-<body>
-    <!-- <nav>
-        <ul>
-            <li><img src="img/LogoFEver2.png" class="logo" alt=""></li> Laita oikean kokoinen logon kuva
-            <li><a class="navlinks" href="#home">Koti</a></li>
-            <li><a class="navlinks"href="#services">Miten voimme auttaa?</a></li>
-            <li><a class="navlinks" href="#contacts">Yhteystiedot</a></li>
-            <li class="languages"><a href="FIN"><img src="img/finland_icon32px.png" alt="Link to Finnish language site"></a></li> 
-            <li class="languages"><a href="EN"><img src="img/england_icon32px.png" alt="Link to English language site"></a></li>
-        
-        </ul>
-    </nav>  -->
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><img src="img/LogoFEver2.png" class="logo" alt=""></li> <!-- Laita oikean kokoinen logon kuva-->
-            <li class="languages"><a href="FIN"><img src="img/finland_icon32px.png" alt="Link to Finnish language site"></a></li> 
-            <li class="languages"><a href="EN"><img src="img/england_icon32px.png" alt="Link to English language site"></a></li>
-            <li class="navlinks" ><a href="#home">Koti</a></li>
-            <li class="navlinks" ><a href="#services">Miten voimme auttaa?</a></li>
-            <li class="navlinks"><a  href="#contacts">Yhteystiedot</a></li>
-
-            
-        
-        </ul>
+      <ul>
+        <li><img src="img/LogoFEver2.png" class="logo" alt="" /></li>
+        <!-- Laita oikean kokoinen logon kuva-->
+        <li class="languages">
+          <a href="FIN"
+            ><img
+              src="img/finland_icon32px.png"
+              alt="Link to Finnish language site"
+          /></a>
+        </li>
+        <li class="languages">
+          <a href="EN"
+            ><img
+              src="img/england_icon32px.png"
+              alt="Link to English language site"
+          /></a>
+        </li>
+        <li class="navlinks"><a href="#home">Koti</a></li>
+        <li class="navlinks"><a href="#services">Miten voimme auttaa?</a></li>
+        <li class="navlinks"><a href="#contacts">Yhteystiedot</a></li>
+      </ul>
     </nav>
     <main>
-        <video width="100%" autoplay loop muted>
-            <source src="video (2160p).mp4">
-            Your Browser does not support the video tag.
+      <div class="vids">
+        <video width="600" height="337" autoplay loop muted class="mobilevid">
+          <source
+            src="vid/bannervidlowres.mp4"
+            type="video/mp4"
+            alt="Man running on a beach"
+          />
+          Your Browser does not support the video tag.
         </video>
+        <video width="1280" height="720" autoplay loop muted class="mediumvid">
+          <source
+            src="vid/bannervideo.mp4"
+            type="video/mp4"
+            alt="Man running on a beach"
+          />
+          Your Browser does not support the video tag.
+        </video>
+        <video width="1920" height="1080" autoplay loop muted class="largevid">
+          <source src="vid/bannervideo.mp4" type="video/mp4" alt="Man running on a beach"/>
+          Your Browser does not support the video tag.
+        </video>
+      </div>
 
-        <section class="page-contents">
-            <h1 class="slogan">Kuinka <span>PulseSync</span> voi edistää hyvinvointiani ja tarjota apua terveyteni kehittämiseksi?</h1>
-            <img src="img/LogoFE.png" id="positioned-img" alt="">
-                <article class="background">
-                    <img src="img/v2.png" class="illustrative-img" alt=""> <!-- Vähä Ms painttiä -->
-                    <h2 class="contacts">Yhteystiedot</h2>
-                    <h3>Tämä on meidän tarinamme</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente cum ipsa? Accusamus esse accusantium adipisci minima ducimus quasi ipsa unde repellat dolores blanditiis. Neque sed labore sunt odio debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure ex modi alias exercitationem minima dolores voluptates molestias! Dolorum accusantium quasi sed fugit rerum iure cupiditate eius sapiente. Reprehenderit, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit architecto officia possimus eum. Amet, sunt numquam cum laboriosam voluptas dolor rem. Dolorum blanditiis amet ea sint culpa iste optio nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa quos repudiandae sunt libero optio in. Accusantium dolores, quas pariatur velit beatae, ad in laudantium deleniti quia delectus repellat magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsum voluptate perspiciatis quo assumenda, fugit itaque vel est modi doloribus id veritatis, deleniti voluptatem nobis non minima provident! Non, exercitationem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nesciunt, consequuntur, possimus itaque eius necessitatibus odit quos tenetur a doloribus, tempore nobis labore natus. Nostrum esse veniam facilis magnam sapiente.</p>
-                </article>
-        </section>
-        <section class="userDetails">
-            <h3>Käyttäjän tiedot:</h3>
-            <p id="browserLang" ></p>
-            <p id="browserSize"></p>
-            <p id="screenSize"></p>
-            <p id="browserTimeAndDate"></p>
-        </section>
-    <script src="FEscripts.js"></script>
+      <section class="page-contents">
+        <h1 class="slogan">
+          Kuinka <span>PulseSync</span> voi edistää hyvinvointiani ja tarjota
+          apua terveyteni kehittämiseksi?
+        </h1>
+        <img src="img/LogoFE.png" id="positioned-img" alt="" />
+        <article class="background">
+          <img src="img/v2.png" class="illustrative-img" alt="" />
+          <!-- Vähä Ms painttiä -->
+          <h2 class="contacts">Yhteystiedot</h2>
+          <h3>Tämä on meidän tarinamme</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+            sapiente cum ipsa? Accusamus esse accusantium adipisci minima
+            ducimus quasi ipsa unde repellat dolores blanditiis. Neque sed
+            labore sunt odio debitis. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Molestiae iure ex modi alias exercitationem minima
+            dolores voluptates molestias! Dolorum accusantium quasi sed fugit
+            rerum iure cupiditate eius sapiente. Reprehenderit, dolore. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Velit architecto
+            officia possimus eum. Amet, sunt numquam cum laboriosam voluptas
+            dolor rem. Dolorum blanditiis amet ea sint culpa iste optio nemo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            ipsa quos repudiandae sunt libero optio in. Accusantium dolores,
+            quas pariatur velit beatae, ad in laudantium deleniti quia delectus
+            repellat magnam! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nostrum ipsum voluptate perspiciatis quo assumenda, fugit
+            itaque vel est modi doloribus id veritatis, deleniti voluptatem
+            nobis non minima provident! Non, exercitationem! Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Vitae nesciunt, consequuntur,
+            possimus itaque eius necessitatibus odit quos tenetur a doloribus,
+            tempore nobis labore natus. Nostrum esse veniam facilis magnam
+            sapiente.
+          </p>
+        </article>
+      </section>
+      <section class="userDetails">
+        <h3>Käyttäjän tiedot:</h3>
+        <p id="browserLang"></p>
+        <p id="browserSize"></p>
+        <p id="screenSize"></p>
+        <p id="browserTimeAndDate"></p>
+      </section>
+      <script src="FEscripts.js"></script>
 
-    <div class="copyright">
+      <div class="copyright">
         <p>© Orvokki 2024</p>
-    </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

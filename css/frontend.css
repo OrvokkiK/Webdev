@@ -45,8 +45,16 @@ nav {
     /* Vaihda alaviivaan?*/ 
 }
 
+#positioned-img {
+    position: absolute;
+    display: block;
+    top: 950px;
+    right: 20px;
+    z-index: 1;
+}
 
-@media screen and (max-width: 600px) {
+/* Mobiilinäyttö (pituus suuntainen*/ 
+@media screen and (min-width: 320px) and (max-width: 600px) {
 
     section > #positioned-img {
         display: none;
@@ -58,23 +66,63 @@ nav {
            
     }
 
-    .logo {
-        /*Siirrä keskelle?*/
-    }
-
-    video {
+    .mobilevid {
         position: relative;
         top: 200px;
         z-index: 1;
     }
 
-    .slogan {
-        top: -100px;
+    .mediumvid {
+        display: none;
     }
 
-    
+    .largevid {
+        display: none;
+    }
+
+    .slogan {
+        top: -100px;
+        color: rgb(59, 59, 152);
+    }
+ 
 }
 
+/* Normikokoien näytttö (1280 x 720) */ 
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+    .mobilevid {
+        display: none;
+    }
+    
+    .largevid {
+        display: none;
+    }
+}
+
+/* Iiiiiso näyttö */
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
+    .mobilevid {
+        display: none;
+    }
+
+    .mediumvid {
+        display: none;
+    }
+
+    #positioned-img {
+        position: absolute;
+        display: block;
+        top: 1260px;
+        right: 20px;
+        z-index: 1;
+    }
+}   
+
+
+video {
+    position: relative;
+    display: block;
+    margin: auto;
+}
  
 
 span {
@@ -139,13 +187,6 @@ body {
     color: rgb(136, 136, 213);
 }
 
-#positioned-img {
-    position: absolute;
-    display: block;
-    top: 950px;
-    right: 20px;
-    z-index: 1;
-}
 
 .userDetails {
     display: block;
@@ -161,6 +202,6 @@ section > h3 {
 }
 
 html,body{
-    overflow-y: scroll;
+    overflow-y: scroll; /* Allows for browsing on Chrome*/
     font-family: Verdana, Tahoma, sans-serif;
  }
