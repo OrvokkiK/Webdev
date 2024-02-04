@@ -1,4 +1,5 @@
-ul {list-style-type: none;
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -32,18 +33,49 @@ nav {
 }
 
 .logo {
-    margin: 2px;
+    margin: 4px;
 }
-
 
 .languages {
     float: right;
 }
- 
+
 .active {
     background: darkgrey;
     /* Vaihda alaviivaan?*/ 
 }
+
+
+@media screen and (max-width: 600px) {
+
+    section > #positioned-img {
+        display: none;
+    }
+
+    nav > ul > li.navlinks {
+        display: block;
+        width: 100%
+           
+    }
+
+    .logo {
+        /*Siirrä keskelle?*/
+    }
+
+    video {
+        position: relative;
+        top: 200px;
+        z-index: 1;
+    }
+
+    .slogan {
+        top: -100px;
+    }
+
+    
+}
+
+ 
 
 span {
     color: darkblue;
@@ -58,8 +90,7 @@ span {
     padding: 10px;
     margin: 10px;
     text-align: justify;
-    /*Questo é troppo piccolo. Cambiare questa imagine. */
-    background-image: url(../img/background-img.jpg);
+    background-image: url(../img/background-img-highres.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: bottom center;
@@ -68,20 +99,26 @@ span {
 }
 
 .slogan{
+    position: relative;
     text-align: center;
     padding: 50px 50px;
     padding-top: 97px;
+    z-index: 2;
 }
 
 .illustrative-img {
-    display: block;
-    border-radius: 25px;
-    border: 2px;
+    display: borderbox;
+    padding: 10px;
+}
+
+h3 {
+    color: white;
 }
 
 p {
     display: block;
     padding: 6px;
+    color: white;
 }
 
 body {
@@ -99,20 +136,20 @@ body {
 }
 
 .contacts {
-    color: darkblue;
+    color: rgb(136, 136, 213);
 }
 
 #positioned-img {
     position: absolute;
     display: block;
-    top: 200px;
+    top: 950px;
     right: 20px;
     z-index: 1;
 }
 
 .userDetails {
     display: block;
-    background-color: rgb(98, 168, 98);
+    background-color: rgb(136, 136, 213);
     width: 400px;
     height: auto;
     font-size: smaller;
