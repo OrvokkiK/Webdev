@@ -87,8 +87,7 @@ nav {
  
 }
 
-/* Normikokoien näytttö (1280 x 720) */ 
-@media screen and (min-width: 601px) and (max-width: 1280px) {
+@media screen and (min-width: 601px) and (max-width: 1267px) {
     .mobilevid {
         display: none;
     }
@@ -96,7 +95,37 @@ nav {
     .largevid {
         display: none;
     }
+
+    #positioned-img {
+        position: absolute;
+        display: block;
+        top: 928px;
+        right: 20px;
+        z-index: 1;
+    } 
 }
+
+/* Normikokoien näytttö (1280 x 720) */ 
+@media screen and (min-width: 1268px) and (max-width: 1280px) {
+    .mobilevid {
+        display: none;
+    }
+    
+    .largevid {
+        display: none;
+    }
+
+    #positioned-img {
+        position: absolute;
+        display: block;
+        top: 900px;
+        right: 20px;
+        z-index: 1;
+    }
+
+
+}
+
 
 /* Iiiiiso näyttö */
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
@@ -155,7 +184,7 @@ span {
 }
 
 .illustrative-img {
-    display: borderbox;
+    display: block;
     padding: 10px;
 }
 
